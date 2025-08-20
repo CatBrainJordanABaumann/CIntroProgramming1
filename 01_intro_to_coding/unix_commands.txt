@@ -1,0 +1,4 @@
+1. ls (list) - Shows the content of the current directory
+2. cd (change directory) <directory_name> - Changes the current directory to the one specified
+3. code <file_name> - Opens the file in vscode
+4. mkdir <directory_name> (make directory) - Creates a folder
