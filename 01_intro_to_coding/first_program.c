@@ -18,6 +18,7 @@ int main() { // <- void can go in the parenthesis but it's optional and doesn't 
     printf("Hello\nworld!\n\n");
 
     printf("I\nam\nready\nto\ncode!\n\n");
+    printf("A\tB\tC\n\n");
 
     printf("Farewell\nworld!\n");
     return 0; // <- Anything other than a 0 is an error

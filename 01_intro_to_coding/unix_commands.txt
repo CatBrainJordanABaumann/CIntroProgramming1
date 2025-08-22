@@ -7,5 +7,6 @@
 7. gcc <file_name> - Compiles the program. Must be a .c file
 8. ./<executable_file - Runs a compiled program
 9. git status - Shows the status of all files that have been in some way changed since last push
-10. git commit UNFINISHED NOTES
-11. git push UNFINISHED NOTES
+10. git add - Adds file to be committed
+11. git commit -m "<message>" - Commits all added files with a message.
+12. git push - Pushes all committed files
