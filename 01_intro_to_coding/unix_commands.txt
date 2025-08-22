@@ -1,12 +1,13 @@
-1. ls (list) - Shows the content of the current directory
-2. cd (change directory) <directory_name> - Changes the current directory to the one specified
-3. code <file_name> - Opens the file in vscode
-4. mkdir <directory_name> (make directory) - Creates a folder
-5. pwd (print working directory) - Shows the path of the current directory
-6. clear - Clears the terminal
-7. gcc <file_name> - Compiles the program. Must be a .c file
-8. ./<executable_file - Runs a compiled program
-9. git status - Shows the status of all files that have been in some way changed since last push
-10. git add - Adds file to be committed
-11. git commit -m "<message>" - Commits all added files with a message.
-12. git push - Pushes all committed files
+ls (list) - Shows the content of the current directory
+cd (change directory) <directory_name> - Changes the current directory to the one specified
+cd .. - Goes to parent directory
+code <file_name> - Opens the file in vscode
+mkdir <directory_name> (make directory) - Creates a folder
+pwd (print working directory) - Shows the path of the current directory
+clear - Clears the terminal
+gcc <file_name> - Compiles the program. Must be a .c file
+./<executable_file - Runs a compiled program
+git status - Shows the status of all files that have been in some way changed since last push
+git add - Adds file to be committed
+git commit -m "<message>" - Commits all added files with a message.
+git push - Pushes all committed files
