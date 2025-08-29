@@ -1,4 +1,4 @@
-#include <stdio.h>
+cd .#include <stdio.h>
 
 int main() { // <- void can go in parenthesis but I don't like it 
     printf("Hello world!\n");
