@@ -10,6 +10,28 @@
 
 #include <stdio.h>
 
+void print_course();
+void print_course_with_number(int course_number);
+
+void two();
+void one_three();
+
+int main() {
+    puts("Starting now:");
+    one_three();
+    puts("Done!");
+
+    print_course();
+    
+    print_course_with_number(2045);
+    print_course_with_number(1009);
+    print_course_with_number(2271);
+    print_course_with_number(2104);
+    print_course_with_number(2045);
+
+    return 0;
+}
+
 void print_course() {
     puts("You are in COP 2271!");
 }
@@ -29,20 +51,4 @@ void one_three() {
     puts("one");
     two();
     puts("three");
-}
-
-int main() {
-    puts("Starting now:");
-    one_three();
-    puts("Done!");
-
-    print_course();
-    
-    print_course_with_number(2045);
-    print_course_with_number(1009);
-    print_course_with_number(2271);
-    print_course_with_number(2104);
-    print_course_with_number(2045);
-
-    return 0;
 }
