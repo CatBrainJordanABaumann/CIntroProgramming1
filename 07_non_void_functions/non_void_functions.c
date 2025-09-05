@@ -38,7 +38,7 @@ int get_temperature() {
 }
 
 void describe_weather(int temperature) {
-    if (temperature > 90)
+    if (temperature >= 90)
         puts("Hot temperature");
     else if (temperature >= 70)
         puts("Fine temperature");
