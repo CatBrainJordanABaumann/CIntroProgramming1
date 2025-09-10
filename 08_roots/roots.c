@@ -1,40 +1,42 @@
 #include <stdio.h>
 #include <math.h>
 
-int print_prompt(char coefficient);
-int get_coefficient();
-int calculate_discriminant(int a, int b, int c);
-void print_roots(int a, int b, int c);
+int printPrompt(char coefficient);
+int getCoefficient();
+int calculateDiscriminant(int a, int b, int c);
+void printRoots(int a, int b, int c);
 
 int main() {
     int a, b, c;
 
-    print_prompt('a');
-    a = get_coefficient();
-    print_prompt('b');
-    b = get_coefficient();
-    print_prompt('c');
-    c = get_coefficient();
+    printPrompt('a');
+    a = getCoefficient();
+    printPrompt('b');
+    b = getCoefficient();
+    printPrompt('c');
+    c = getCoefficient();
+
+    printRoots(a, b, c);
     
     return 0;
 }
 
-int print_prompt(char coefficient) {
+int printPrompt(char coefficient) {
     printf("Enter the coefficient of %c: ", coefficient);
 }
 
-int get_coefficient() {
+int getCoefficient() {
     int coeff;
     scanf("%d", &coeff);
     return coeff;
 }
 
-int calculate_discriminant(int a, int b, int c) {
+int calculateDiscriminant(int a, int b, int c) {
     return b * b - 4 * a * c;
 }
 
-void print_roots(int a, int b, int c) {
-    int discriminant = calculate_discriminant(a, b, c);
+void printRoots(int a, int b, int c) {
+    int discriminant = calculateDiscriminant(a, b, c);
 
     if (discriminant < 0) {
         puts("No real roots!");
@@ -45,7 +47,7 @@ void print_roots(int a, int b, int c) {
         return;
     }
     double sqrtDiscriminant = sqrt(discriminant);
-    double x1 = (-b + sqrtDiscriminant) / (2 * a);
+    double x1 = (-b - sqrtDiscriminant) / (2 * a);
     double x2 = (-b + sqrtDiscriminant) / (2 * a);
     printf("x1 = %lf and x2 = %lf", x1, x2);
 }
