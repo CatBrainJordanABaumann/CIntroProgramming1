@@ -7,6 +7,22 @@ bool is_divisible_both(int numerator, int denominator);
 char bool_to_char(bool b);
 
 int main() {
+    // Oh yeah, nobody ever talks about this, but you can make these little pockets of locality in C using squiggly brackets. In there all variables are local
+    // This:
+    { // <-
+        for (int i = 0; i < 10; i++)
+            printf("Hello %d\n", i);
+    } // <-
+    // Is equal to this:
+    {
+        int i = 0;
+        while (i < 10)
+        {
+            printf("Hello %d\n", i);
+            i++;
+        }
+        // i++ is the same as i = i + 1 is the same as i += 1
+    }
     int x, y;
     scanf("%d", &x);
     scanf("%d", &y);
@@ -25,5 +41,5 @@ bool is_divisible_both(int numerator, int denominator) {
 }
 
 char bool_to_char(bool b) {
-    return b ? 'F' : 'T';
+    return b ? 'T' : 'F';
 }
